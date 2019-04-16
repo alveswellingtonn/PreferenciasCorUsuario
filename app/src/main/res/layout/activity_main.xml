@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="preferenciascorusuario.cursoandroid.com.preferenciascorusuario.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/texto_titulo"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/texto_titulo"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupId"
+        android:layout_width="213dp"
+        android:layout_height="139dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSalvarId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/azulId"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cor_azul"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/vermelhoId"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cor_vermelho"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/laranjaId"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cor_laranja"
+            android:textStyle="italic" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botaoSalvarId"
+        android:layout_width="153dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="246dp"
+        android:text="@string/botao_salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupId" />
+</android.support.constraint.ConstraintLayout>
